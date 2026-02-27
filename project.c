@@ -59,7 +59,7 @@ int generatePNR()
 
     if (fp != NULL) 
 	{
-        // Move to the last record in the file
+        //  Move to the last record in the file
         fseek(fp, -(long)sizeof(struct Passenger), SEEK_END);
         if (fread(&b, sizeof(struct Passenger), 1, fp)) 
 		{
